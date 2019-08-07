@@ -1,0 +1,63 @@
+前端选择完文件之后
+
+上传微信同时返回微信图片的serverId
+
+后台通过serverId查询图片
+
+
+文件上传接口
+http://ehall.njrts.edu.cn/publicapp/sys/emapcomponent/file/uploadTempFile.do
+
+请求参数
+scope: 156394690552996
+fileToken: 1563946905529961
+size: 0
+type:
+storeId: file
+isSingle: 0
+fileName:
+bhFile: (binary)
+
+返回
+deleteUrl: "/publicapp/sys/emapcomponent/file/deleteTempFile/156394690552996/1563946905529961/bc0fd3730b014a8aa2782f637d692883.do"
+fileUrl: "/publicapp/sys/emapcomponent/file/getAttachmentFile/bc0fd3730b014a8aa2782f637d692883.do"
+hasException: false
+id: "bc0fd3730b014a8aa2782f637d692883"
+isImage: true
+name: "动态数据.png"
+size: 31891
+success: true
+tempFileUrl: "/publicapp/sys/emapcomponent/file/getTempFile/156394690552996/1563946905529961/bc0fd3730b014a8aa2782f637d692883.do"
+ts: "2019-07-24 14:02:24"
+
+保存文件接口
+http://ehall.njrts.edu.cn/publicapp/sys/emapcomponent/file/saveAttachment/scope/fileToken.do
+
+请求参数
+attachmentParam: {
+"storeId":"file",
+"scope":"156394690552996",
+"fileToken":"1563946905529961",
+"orderMap":{
+    "e5c855345adc4b789164cc6409d2ca94":1,
+    "651b1a0e95f644eba2df0327c6165e1c":2,
+    "bc0fd3730b014a8aa2782f637d692883":3
+}
+}
+
+返回
+content: "保存成功！"
+hasException: false
+success: true
+successCount: 3
+
+返回保存图片
+http://ehall.njrts.edu.cn/publicapp/sys/emapcomponent/file/getUploadedAttachment/1563946905529961.do
+
+请求参数
+无
+
+返回
+fileToken: "1563946905529961"
+items:[{里面是文件上传接口返回的参数}]
+

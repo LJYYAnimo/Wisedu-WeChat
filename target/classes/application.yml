@@ -1,0 +1,13 @@
+server:
+  port: 8890
+
+spring:
+  cache:
+    type: caffeine
+    cache-names: wechat
+    caffeine:
+      spec: maximumSize=5000,expireAfterWrite=7200s
+
+wisedu:
+  type: cp #cp 代表企业微信 mp 代表公众号
+  appId: wx5831636f61cc3545

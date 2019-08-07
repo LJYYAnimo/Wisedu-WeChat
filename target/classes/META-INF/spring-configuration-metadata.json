@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "wisedu",
+      "type": "com.wisedu.wechat.config.WiseduConfig",
+      "sourceType": "com.wisedu.wechat.config.WiseduConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wisedu.app-id",
+      "type": "java.lang.String",
+      "sourceType": "com.wisedu.wechat.config.WiseduConfig"
+    },
+    {
+      "name": "wisedu.type",
+      "type": "java.lang.String",
+      "sourceType": "com.wisedu.wechat.config.WiseduConfig"
+    }
+  ],
+  "hints": []
+}

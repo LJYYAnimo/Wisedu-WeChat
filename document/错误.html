@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>系统异常</title>
+    <script type="text/javascript">
+        var skin = "blue";
+        try
+        {
+            if (localStorage.schoolConfig !== undefined)
+            {
+                var school = JSON.parse(localStorage.schoolConfig);
+                if(school.skin !== undefined)
+                {
+                    skin = school.skin;
+                }
+            }
+        }
+        catch(e)
+        {
+        }
+        document.write('<link rel="stylesheet" href="http://res.njrts.edu.cn/fe_components/jqwidget/' + skin + '/bh.min.css" type="text/css" />');
+        document.write('<link rel="stylesheet" href="http://res.njrts.edu.cn/fe_components/jqwidget/' + skin + '/bh-scenes.css" type="text/css" id="bhThemes" />');
+    </script>
+    <link rel="stylesheet" href="http://res.njrts.edu.cn/fe_components/iconfont/iconfont.css">
+    <!--[if lt IE 9]>
+    <script src='http://res.njrts.edu.cn/bower_components/html5shiv/dist/html5shiv.min.js'></script>
+    <![endif]-->
+    <style>
+        .underscore {
+            padding-bottom: 16px;
+            border-bottom: 1px solid;
+            margin: auto;
+        }
+        .underscore{
+            padding-bottom: 12px;
+            border-bottom: 1px solid #ededed;
+            margin: auto;
+        }
+        .label_text{
+            width: 100px;
+            float: left;
+        }
+        .label_text h4{
+            line-height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<header></header>
+<main id="mainContainer">
+    <article bh-layout-role="single-no-title" class="scenes_abnormalPage">
+        <section class="scenes_abnormalPage_container">
+            <div class="bh-row bh-mb-32 bh-pb-32">
+                <div class="bh-col-md-4">
+                    <img src="http://res.njrts.edu.cn/images/error.png" class="bh-mb-16 bh-pull-right" alt="error" />
+                </div>
+                <div class="bh-col-md-7">
+                    <div class="bh-pull-left scenes_abnormalPage" style="height:260px;">
+                        <div class="scenes_abnormalPage_container" style="text-align: left;">
+                            <div class="underscore" style="min-width:700px;margin:0">
+                                <h2 class="bh-mr-32" style="display: inline-block;">稍等~正在紧急修复</h2>
+                                <h4 class="bh-color-caption" style="display: inline-block;">#E2140600091</h4>
+                            </div>
+                            <div class="bh-mt-16 scenes_abnormalPage_text" style="min-width:700px">
+                                <div class="underscore">
+                                    <div class="label_text">
+                                        <h4>错误标识：</h4>
+                                    </div>
+                                    <div class="bh-col-md-10">
+                                        <div class="bh-text-caption bh-color-caption">2c2f540c26aa401f8c1671835b8f379f</div>
+                                    </div>
+                                    <div class="bh-clearfix"></div>
+                                </div>
+                                <div class="underscore bh-mt-16">
+                                    <div class="label_text">
+                                        <h4>出错信息：</h4>
+                                    </div>
+                                    <div class="bh-col-md-10">
+                                        <div class="bh-text-caption bh-color-caption">Required String parameter &#039;scope&#039; is not present</div>
+                                    </div>
+                                    <div class="bh-clearfix"></div>
+                                </div>
+                                <div class="underscore bh-mt-16" style="display: none">
+                                    <div class="label_text">
+                                        <h4>联系信息：</h4>
+                                    </div>
+                                    <div class="bh-col-md-10">
+                                        <div class="bh-text-caption bh-color-caption">无</div>
+                                    </div>
+                                    <div class="bh-clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+
+<footer></footer>
+
+</body>
+<script type="text/javascript" src='http://res.njrts.edu.cn/fe_components/jquery-1.11.3.js'></script>
+<script type="text/javascript" src="http://res.njrts.edu.cn/fe_components/bh.js"></script>
+<script type="text/javascript" src="http://res.njrts.edu.cn/fe_components/bh_utils.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+        var headData = {
+            "showAsideNav": false,
+            "logo": "http://res.njrts.edu.cn/images/logo.png",
+            "title": "系统异常"
+        };
+        $('header').bhHeader(headData);
+        $("footer").bhFooter({
+            text: "版权信息：© 2019 江苏金智教育信息股份有限公司 苏ICP备10204514号"
+        });
+
+        BH_UTILS.setContentMinHeight($("body").children("main").children("article"));
+    });
+</script>
+
+</html>
+
+,[Server:"", Date:"Wed, 24 Jul 2019 06:57:05 GMT", Content-Type:"text/html; charset=UTF-8", Content-Length:"4554", Set-Cookie:"route=d1cf86fc97c1866a89c2e6c4dd8fcabf", X-Frame-Options:"SAMEORIGIN", Proxy-Connection:"Keep-alive"]>
